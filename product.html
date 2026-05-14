@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product - XTRA Bike Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+   <link rel="icon" href="assets/icone.jpg">
+  </head>
+  <div class="floating-actions">
+
+  <!-- زر الإيميل (ثابت) -->
+  <a href="mailto:xtrabike@gmail.com" class="float-btn mail-btn">
+    <svg viewBox="0 0 24 24">
+      <path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </a>
+
+  <!-- زر الرجوع للأعلى -->
+  <button class="float-btn back-top" id="backTop">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 18V6" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M6 12l6-6 6 6" stroke="currentColor" stroke-width="2" fill="none"/>
+    </svg>
+  </button>
+
+</div>
+  <body>
+     <div class="top-offer">
+    <strong>envato</strong><span>market</span>
+    <p>Limited time offer, Buy XTRA WordPress theme only <b>$29</b></p>
+    <a href="https://themeforest.net/checkout/114363848/create_account?clickid=y4uV0U10VxycWNiywYRpJ0YsUkuysmW24WyWWA0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=1287861&mp_value1=&utm_campaign=af_impact_radius_1287861&utm_medium=affiliate&utm_source=impact_radius">Download XTRA Theme</a>
+  </div>
+
+<header class="site-header" id="post" data-header>
+
+  <a class="brand" href="index.html" aria-label="Bike Shop home">
+    <img src="assets/bike-logo.png" alt="Bike Shop">
+  </a>
+
+  <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="main-nav" data-nav>
+    <a href="index.html">Home</a>
+
+    <div class="nav-item has-dropdown">
+      <a class="about-trigger" href="about.html">
+        About <span class="nav-arrow"></span>
+      </a>
+
+      <div class="nav-dropdown">
+        <a href="about.html">Submenu 1</a>
+        <a class="nested-trigger" href="services.html">
+          Dropdown menu <span></span>
+        </a>
+        <a href="about.html#story">Submenu 2</a>
+
+        <div class="nav-submenu">
+          <a href="services.html">Submenu 1</a>
+          <a href="faq.html">Submenu 2</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="shop.html">Shop</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- 🔥 ACTIONS -->
+  <div class="header-actions">
+
+    <!-- زر -->
+    <a class="help-pill" href="contact.html">
+      <i class="fas fa-bicycle"></i>
+      Help & Service
+    </a>
+
+    <!-- wishlist -->
+    <a class="round-action" href="wishlist.html" aria-label="Wishlist">
+      <i class="far fa-heart"></i>
+<span class="count" data-wishlist-count>0</span>
+    </a>
+
+    <!-- cart -->
+    <a class="round-action" href="cart.html" aria-label="Cart">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="count">1</span>
+    </a>
+
+  </div>
+
+</header>
+<aside class="side-tools">
+
+  <a href="#home" data-label="Purchase Theme">
+    <i class="fa-solid fa-bolt"></i>
+  </a>
+
+  <a href="https://xtratheme.com/docs" data-label="Documentation">
+    <i class="fa-regular fa-copy"></i>
+  </a>
+
+  <a href="https://www.youtube.com/channel/UCrS1L4oeTRfU1hvIo1gJGjg/videos" data-label="Video Tutorials">
+    <i class="fa-regular fa-circle-play"></i>
+  </a>
+
+  <a href="https://codevz.ticksy.com/" data-label="Support center">
+    <i class="fa-regular fa-comment"></i>
+  </a>
+
+  <a href="https://xtratheme.com/showcase" data-label="showcase">
+    <i class="fa-regular fa-heart"></i>
+  </a>
+
+  <a href="cart.html" data-label="Enable Section Export">
+    <i class="fa-solid fa-download"></i>
+  </a>
+
+</aside>
+    <section class="page-title">
+      <div>
+        <h1>Bike <span>Details</span></h1>
+        <p>Product page with cart and wishlist actions.</p>
+      </div>
+    </section>
+    <main class="page-hero">
+      <section class="product-detail" data-product-detail></section>
+    </main>
+    <div class="toast" data-toast-box></div>
+
+    <div class="contact-strip reveal">
+      <div><span>📧Pre-sale Questions</span><strong>help@xtrabicycle.com</strong></div>
+      <div><span>📞Call Us</span><strong>+1 800 2345 6789</strong></div>
+      <div><span>📍Our Location</span><strong>#2354, Beverly Hills, LA</strong></div>
+    </div>
+  <footer class="footer" id="contact">
+   
+    <div class="footer-grid">
+     <div class="footer-office">
+  <h5>Office</h5>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-location-dot"></i></span>
+    <p>121 King Street, NewYork</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-phone"></i></span>
+    <p>+1 (800) 333 44 55</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-envelope"></i></span>
+    <p>xtrabike@gmail.com</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-briefcase"></i></span>
+    <p>+1 (800) 333 99 88</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fab fa-x-twitter"></i></span>
+    <p>@xtra_bikeshop</p>
+  </div>
+</div>
+  <div>
+        <h5>News</h5>
+        <a class="news-item" href="post3.html">
+          <img src="assets/post1-1-150x150.jpg" alt="">How to Safely Commute to Work by Bicycle</a>
+          <a class="news-item" href="post2.html">
+            <img src="assets/post2-1-150x150.jpg" alt="">Top 10 Reasons to Start Cycling Today</a>
+          </div>      <div><h5>Shortcuts</h5><div class="footer-links"><a href="#home">Home</a><a href="#">Maps</a><a href="#">City Store</a><a href="#">Careers</a><a href="#">News</a><a href="#">Employees</a><a href="#">Clients</a><a href="#">Teams</a><a href="#">Consultation</a><a href="#">Benefits</a><a href="#">Privacy</a><a href="#">Support</a></div></div>
+      <div><h5>Working Hours</h5><p>Our support available to help you 24 hours a day, seven days a week.</p><p>Monday to Friday <b>8AM - 4PM</b></p><p>Saturday <b>8AM - 1PM</b></p><p>Sunday <b>Closed</b></p></div>
+    </div>
+    <div class="footer-bottom"><span>Copyright &copy; 2026 Xtra Theme. All Rights Reserved.</span><img src="assets/payment.png" alt="Payment methods"></div>
+  </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+
+const stars = document.querySelectorAll(".rating-select i");
+
+let selected = -1;
+
+/* default */
+stars.forEach(star=>{
+  star.classList.add("inactive");
+});
+
+/* hover */
+stars.forEach((star,index)=>{
+
+  star.addEventListener("mouseenter",()=>{
+
+    stars.forEach((s,i)=>{
+
+      s.classList.remove("hovered","inactive");
+
+      if(i <= index){
+        s.textContent = "★";
+        s.classList.add("hovered");
+      }else{
+        s.textContent = "☆";
+        s.classList.add("inactive");
+      }
+
+    });
+
+  });
+
+  /* click save */
+  star.addEventListener("click",()=>{
+
+    selected = index;
+
+    stars.forEach((s,i)=>{
+
+      s.classList.remove("active","inactive");
+
+      if(i <= selected){
+        s.textContent = "★";
+        s.classList.add("active");
+      }else{
+        s.textContent = "☆";
+        s.classList.add("inactive");
+      }
+
+    });
+
+  });
+
+});
+
+/* leave */
+document.querySelector(".rating-select")
+.addEventListener("mouseleave",()=>{
+
+  stars.forEach((s,i)=>{
+
+    s.classList.remove("hovered");
+
+    if(i <= selected){
+      s.textContent = "★";
+      s.classList.add("active");
+      s.classList.remove("inactive");
+    }else{
+      s.textContent = "☆";
+      s.classList.add("inactive");
+      s.classList.remove("active");
+    }
+
+  });
+
+});
+
+</script>
+<script>
+
+// =========================================
+// PRODUCT ACTIONS
+// =========================================
+
+document.addEventListener("click", function(e){
+
+  // =====================================
+  // PLUS
+  // =====================================
+
+  if(e.target.matches("[data-qty-plus]")){
+
+    const qtyEl =
+    e.target.parentElement
+    .querySelector("[data-qty-value]");
+
+    let qty =
+    parseInt(qtyEl.textContent);
+
+    qtyEl.textContent = qty + 1;
+  }
+
+  // =====================================
+  // MINUS
+  // =====================================
+
+  if(e.target.matches("[data-qty-minus]")){
+
+    const qtyEl =
+    e.target.parentElement
+    .querySelector("[data-qty-value]");
+
+    let qty =
+    parseInt(qtyEl.textContent);
+
+    if(qty > 1){
+
+      qtyEl.textContent = qty - 1;
+    }
+  }
+
+  // =====================================
+  // CART
+  // =====================================
+
+  const cartBtn =
+  e.target.closest("[data-cart]");
+
+  if(cartBtn){
+
+    const id =
+    cartBtn.dataset.cart;
+
+    const qty =
+    parseInt(
+      document.querySelector(
+        "[data-qty-value]"
+      ).textContent
+    );
+
+    let cart =
+    JSON.parse(
+      localStorage.getItem("cart")
+    ) || [];
+
+    const existing =
+    cart.find(item => item.id === id);
+
+    // exists
+    if(existing){
+
+      existing.qty += qty;
+
+    }else{
+
+      cart.push({
+        id:id,
+        qty:qty
+      });
+    }
+
+    localStorage.setItem(
+      "cart",
+      JSON.stringify(cart)
+    );
+
+    // animation
+    cartBtn.innerHTML =
+    '<i class="fas fa-check"></i> Added';
+
+    setTimeout(() => {
+
+      cartBtn.innerHTML =
+      '<i class="fas fa-cart-shopping"></i> Add to cart';
+
+    },1000);
+  }
+
+  // =====================================
+  // WISHLIST
+  // =====================================
+
+  const wishBtn =
+  e.target.closest("[data-wishlist]");
+
+  if(wishBtn){
+
+    const id =
+    wishBtn.dataset.wishlist;
+
+    let wishlist =
+    JSON.parse(
+      localStorage.getItem("wishlist")
+    ) || [];
+
+    // REMOVE
+    if(wishlist.includes(id)){
+
+      wishlist =
+      wishlist.filter(
+        item => item !== id
+      );
+
+      wishBtn.classList.remove("active");
+
+      wishBtn.innerHTML =
+      '<i class="far fa-heart"></i>';
+
+    }else{
+
+      // ADD
+      wishlist.push(id);
+
+      wishBtn.classList.add("active");
+
+      wishBtn.innerHTML =
+      '<i class="fas fa-heart"></i>';
+    }
+
+    localStorage.setItem(
+      "wishlist",
+      JSON.stringify(wishlist)
+    );
+  }
+
+});
+
+</script>
+<script>
+
+const shareUrl =
+window.location.href;
+
+const shareTitle =
+document.title;
+
+/* facebook */
+document
+.querySelector(".fa-facebook-f")
+?.addEventListener("click", () => {
+
+  window.open(
+    `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
+    "_blank"
+  );
+
+});
+
+/* twitter */
+document
+.querySelector(".fa-x-twitter")
+?.addEventListener("click", () => {
+
+window.open(
+ ` https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareTitle)}`,
+  "_blank"
+);
+});
+
+/* pinterest */
+document
+.querySelector(".fa-pinterest-p")
+?.addEventListener("click", () => {
+
+  window.open(
+    `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(shareUrl)}`,
+    "_blank"
+  );
+
+});
+
+/* whatsapp */
+document
+.querySelector(".fa-whatsapp")
+?.addEventListener("click", () => {
+
+  window.open(
+    `https://wa.me/?text=${encodeURIComponent(shareTitle + ' ' + shareUrl)}`,
+    "_blank"
+  );
+
+});
+
+/* email */
+document
+.querySelector(".fa-envelope")
+?.addEventListener("click", () => {
+
+  window.location.href =
+  `mailto:?subject=${encodeURIComponent(shareTitle)}&body=${encodeURIComponent(shareUrl)}`;
+
+});
+
+</script>
+<script>
+
+const stickyBar =
+document.querySelector(".sticky-product-bar");
+
+const floating =
+document.querySelector(".floating-actions");
+
+window.addEventListener("scroll", () => {
+
+  const trigger =
+  document.body.scrollHeight / 3;
+
+  if(window.scrollY > trigger){
+
+    stickyBar?.classList.add("show");
+
+    floating?.classList.add("up");
+
+  }else{
+
+    stickyBar?.classList.remove("show");
+
+    floating?.classList.remove("up");
+  }
+
+});
+
+</script>
+<script>
+
+// =========================================
+// PRODUCT NEXT / PREV
+// =========================================
+
+const productKeys =
+Object.keys(products);
+
+const currentId =
+new URLSearchParams(window.location.search).get("id");
+
+const currentIndex =
+productKeys.indexOf(currentId);
+
+const prevBtn =
+document.querySelector(".product-prev");
+
+const nextBtn =
+document.querySelector(".product-next");
+
+/* PREV */
+
+if(prevBtn){
+
+  let prevIndex =
+  currentIndex - 1;
+
+  if(prevIndex < 0){
+
+    prevIndex =
+    productKeys.length - 1;
+  }
+
+  prevBtn.href =
+  `product.html?id=${productKeys[prevIndex]}`;
+}
+
+/* NEXT */
+
+if(nextBtn){
+
+  let nextIndex =
+  currentIndex + 1;
+
+  if(nextIndex >= productKeys.length){
+
+    nextIndex = 0;
+  }
+
+  nextBtn.href =
+ ` product.html?id=${productKeys[nextIndex]}`;
+}
+
+</script>
+  </body>
+</html>

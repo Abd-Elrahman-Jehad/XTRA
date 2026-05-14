@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XTRA Bike Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <!-- GSAP -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<!-- THREE JS -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+<!-- PARTICLES -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<!-- THREE JS -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <link rel="icon" href="assets/icone.jpg">
+
+</head>
+
+
+<div class="floating-actions">
+
+  <!-- زر الإيميل (ثابت) -->
+  <a href="mailto:xtrabike@gmail.com" class="float-btn mail-btn">
+    <svg viewBox="0 0 24 24">
+      <path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </a>
+
+  <!-- زر الرجوع للأعلى -->
+  <button class="float-btn back-top" id="backTop">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 18V6" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M6 12l6-6 6 6" stroke="currentColor" stroke-width="2" fill="none"/>
+    </svg>
+  </button>
+
+</div>
+<body>
+<!-- =========================================
+     ULTRA CINEMATIC INTRO
+========================================= -->
+
+
+
+<!-- =========================================
+     ULTRA CINEMATIC INTRO
+========================================= -->
+
+<div id="ultraIntro">
+
+  <canvas id="introCanvas"></canvas>
+
+  <div class="introGrid"></div>
+
+  <div class="introOverlay"></div>
+
+  <div class="introNoise"></div>
+
+  <div class="introFlash"></div>
+
+  <div class="introHud">
+    <span>RIDE SYSTEM</span>
+    <strong data-loader-percent>00</strong>
+  </div>
+
+  <div class="introBikeStage">
+    <span class="introBeam beam-a"></span>
+    <span class="introBeam beam-b"></span>
+    <span class="introBeam beam-c"></span>
+    <img class="introBikeImage" src="assets/ChatGPT Image May 14, 2026, 12_00_39 PM.png" alt="">
+    <span class="introWheel wheel-left"></span>
+    <span class="introWheel wheel-right"></span>
+  </div>
+
+  <div class="introText">
+
+    <span class="introKicker">INITIALIZING ELECTRIC MOTION</span>
+
+    <h1>
+      XTRA <span>BIKE</span>
+    </h1>
+
+    <p>
+      LOADING A HIGH VOLTAGE RIDE EXPERIENCE
+    </p>
+
+    <div class="introProgress">
+      <span data-loader-bar></span>
+    </div>
+
+  </div>
+
+</div>
+  
+  <div class="top-offer">
+    <strong>envato</strong><span>market</span>
+    <p>Limited time offer, Buy XTRA WordPress theme only <b>$29</b></p>
+    <a href="https://themeforest.net/checkout/114363848/create_account?clickid=y4uV0U10VxycWNiywYRpJ0YsUkuysmW24WyWWA0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=1287861&mp_value1=&utm_campaign=af_impact_radius_1287861&utm_medium=affiliate&utm_source=impact_radius">Download XTRA Theme</a>
+  </div>
+
+<header class="site-header" data-header>
+
+  <a class="brand" href="index.html" aria-label="Bike Shop home">
+    <img src="assets/bike-logo.png" alt="Bike Shop">
+  </a>
+
+  <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="main-nav" data-nav>
+    <a class="active" href="index.html">Home</a>
+
+    <div class="nav-item has-dropdown">
+      <a class="about-trigger" href="about.html">
+        About <span class="nav-arrow"></span>
+      </a>
+
+      <div class="nav-dropdown">
+        <a href="about.html">Submenu 1</a>
+        <a class="nested-trigger" href="services.html">
+          Dropdown menu <span></span>
+        </a>
+        <a href="about.html#story">Submenu 2</a>
+
+        <div class="nav-submenu">
+          <a href="services.html">Submenu 1</a>
+          <a href="faq.html">Submenu 2</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="shop.html">Shop</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- 🔥 ACTIONS -->
+  <div class="header-actions">
+
+    <!-- زر -->
+    <a class="help-pill" href="contact.html">
+      <i class="fas fa-bicycle"></i>
+      Help & Service
+    </a>
+
+    <!-- wishlist -->
+    <a class="round-action" href="wishlist.html" aria-label="Wishlist">
+      <i class="far fa-heart"></i>
+<span class="count" data-wishlist-count>0</span>
+    </a>
+
+    <!-- cart -->
+    <a class="round-action" href="cart.html" aria-label="Cart">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="count">1</span>
+    </a>
+
+  </div>
+
+</header>
+
+<aside class="side-tools">
+
+  <a href="#home" data-label="Purchase Theme">
+    <i class="fa-solid fa-bolt"></i>
+  </a>
+
+  <a href="https://xtratheme.com/docs" data-label="Documentation">
+    <i class="fa-regular fa-copy"></i>
+  </a>
+
+  <a href="https://www.youtube.com/channel/UCrS1L4oeTRfU1hvIo1gJGjg/videos" data-label="Video Tutorials">
+    <i class="fa-regular fa-circle-play"></i>
+  </a>
+
+  <a href="https://codevz.ticksy.com/" data-label="Support center">
+    <i class="fa-regular fa-comment"></i>
+  </a>
+
+  <a href="https://xtratheme.com/showcase" data-label="showcase">
+    <i class="fa-regular fa-heart"></i>
+  </a>
+
+  <a href="cart.html" data-label="Enable Section Export">
+    <i class="fa-solid fa-download"></i>
+  </a>
+
+</aside>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <h1>XTRA Bicycle is not just<br>a <span>Regular Bicycle</span></h1>
+        <p>A bicycle, also called a pedal cycle, bike or cycle, is a human-powered or motor-powered assisted.</p>
+        <div class="hero-price">$ 1749</div>
+        <div class="hero-buttons">
+          <a class="button orange" href="product.html?id=hero">See full details</a>
+          <a class="ghost-link" href="#colors">Bike have different colors</a>
+        </div>
+      </div>
+      <div class="hero-art reveal" data-mouse-card>
+        <img class="hero-bg" src="assets/hero-bg-nature.png" alt="">
+
+        <img class="hero-bike" src="assets/bike-1.png" alt="Black electric bicycle" data-mouse-layer>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-bike reveal" data-mouse-card>
+        <img src="assets/bike-3-1.png" alt="White modern bicycle" data-mouse-layer>
+      </div>
+      <div class="about-copy reveal">
+        <h2>XTRA Bicycle - It's Not<br>Just a Bike, <span>It's a Revolution</span></h2>
+        <p>A bicycle, also called a pedal cycle, bike or cycle, is a human powered or motor-powered assisted, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other.</p>
+        <ul class="feature-grid">
+          <li>Free test rides</li>
+          <li>Expert repairs</li>
+          <li>Custom builds</li>
+          <li>Gear upgrades</li>
+          <li>Electric bikes</li>
+          <li>Free Shipping</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ride-panel" id="services">
+      <div class="reveal">
+        <h2>It's a great day for a ride.</h2>
+        <p>A bicycle, also called a pedal cycle, bike or cycle, is a human powered</p>
+<a class="buttonn white1" href="shop.html">
+  Explore Products
+  <span class="arrow">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M5 12H19M19 12L13 6M19 12L13 18" 
+            stroke="currentColor" 
+            stroke-width="2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"/>
+    </svg>
+  </span>
+</a>      </div>
+    </section>
+
+    <div class="marquee" id="home" aria-hidden="true">
+      <div class="marquee-track">
+        <span>MEET OUR BESTSELLERS</span><span>MEET OUR BESTSELLERS</span><span>MEET OUR BESTSELLERS</span><span>MEET OUR BESTSELLERS</span>
+        <span>MEET OUR BESTSELLERS</span><span>MEET OUR BESTSELLERS</span><span>MEET OUR BESTSELLERS</span><span>MEET OUR BESTSELLERS</span>
+      </div>
+    </div>
+
+    <section class="products" id="shop">
+      <div class="section-heading reveal">
+        <p>MEET OUR BESTSELLERS</p>
+        <h3>Meet our <span>Bestsellers</span></h3>
+        <a href="shop.html">View all products</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card reveal" data-product="step-thru" data-tilt>
+          <a class="product-image" href="product.html?id=step-thru"><span class="sale-ribbon">HOT SALE 22% OFF</span>
+            
+            <img src="assets/bike-pr10-600x392.png" alt="Step-Thru Premium Sets">
+          
+              <div class="image-icons">
+       <div class="icon" data-label="Add to wishlist"><div class="icon">
+  <svg viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-9-7.5C-1 9 2 3 7 5c2 1 3 3 5 3s3-2 5-3c5-2 8 4 4 8.5C18 16.65 12 21 12 21z"/>
+  </svg>
+</div></div>
+<div class="icon" data-label="Compare"><svg viewBox="0 0 24 24">
+  <path d="M7 7h10l-3-3m3 3l-3 3M17 17H7l3 3m-3-3l3-3"/>
+</svg></div>
+<div class="icon" data-label="Quick view"><svg viewBox="0 0 24 24">
+  <path d="M12 5C6 5 2 12 2 12s4 7 10 7 10-7 10-7-4-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+</svg></div>
+        </div>
+          
+          </a>
+     
+          <div class="product-meta">
+            <h4><a href="product.html?id=step-thru">Discover 2 Step-Thru</a></h4>
+            <p>Premium Sets</p>
+            <div class="price-row"><del>$980</del><strong>$768</strong>
+               <div class="product-actions">
+    <button type="button" data-cart="folding"><svg viewBox="0 0 24 24">
+  <path d="M6 6h15l-1.5 9h-13zM6 6L5 3H2M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm7 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+</svg>Add to cart</button>
+            </div>
+            
+            </div>
+         
+          </div>
+        </article>
+        <article class="product-card reveal" data-product="folding" data-tilt>
+          <a class="product-image" href="product.html?id=folding"><img src="assets/bike-pr11-600x392.png" alt="Folding Electric Bike">
+                    <!-- 🔥 الأيقونات -->
+        <div class="image-icons">
+          <div class="icon" data-label="Add to wishlist"><div class="icon">
+  <svg viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-9-7.5C-1 9 2 3 7 5c2 1 3 3 5 3s3-2 5-3c5-2 8 4 4 8.5C18 16.65 12 21 12 21z"/>
+  </svg>
+</div></div>
+          <div class="icon" data-label="Compare"><svg viewBox="0 0 24 24">
+  <path d="M7 7h10l-3-3m3 3l-3 3M17 17H7l3 3m-3-3l3-3"/>
+</svg></div>
+          <div class="icon" data-label="Quick view"><svg viewBox="0 0 24 24">
+  <path d="M12 5C6 5 2 12 2 12s4 7 10 7 10-7 10-7-4-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+</svg></div>
+        </div>
+          </a>
+          <div class="product-meta">
+            <h4><a href="product.html?id=folding">Folding Electric Bike</a></h4>
+            <p>Exclusive</p>
+            <div class="price-row"><strong>$1,270</strong>
+            
+                <div class="product-actions">
+              <button type="button" data-cart="folding"><svg viewBox="0 0 24 24">
+  <path d="M6 6h15l-1.5 9h-13zM6 6L5 3H2M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm7 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+</svg>Add to cart</button>
+            </div>
+            
+            
+            </div>
+        
+          </div>
+        </article>
+        <article class="product-card reveal" data-product="parkwood" data-tilt>
+          <a class="product-image" href="product.html?id=parkwood"><img src="assets/bike-pr3-600x392.png" alt="Parkwood Electric Bike">
+          
+                    <!-- 🔥 الأيقونات -->
+        <div class="image-icons">
+          <div class="icon" data-label="Add to wishlist"><div class="icon">
+  <svg viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-9-7.5C-1 9 2 3 7 5c2 1 3 3 5 3s3-2 5-3c5-2 8 4 4 8.5C18 16.65 12 21 12 21z"/>
+  </svg>
+</div></div>
+          <div class="icon" data-label="Compare"><svg viewBox="0 0 24 24">
+  <path d="M7 7h10l-3-3m3 3l-3 3M17 17H7l3 3m-3-3l3-3"/>
+</svg></div>
+          <div class="icon" data-label="Quick view"><svg viewBox="0 0 24 24">
+  <path d="M12 5C6 5 2 12 2 12s4 7 10 7 10-7 10-7-4-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+</svg></div>
+        </div>
+      </a>
+          <div class="product-meta">
+            <h4><a href="product.html?id=parkwood">Parkwood Electric Bike</a></h4>
+            <p>Cannondale</p>
+            <div class="price-row"><strong>$980</strong>
+            
+               <div class="product-actions">
+              <button type="button" data-cart="parkwood"><svg viewBox="0 0 24 24">
+  <path d="M6 6h15l-1.5 9h-13zM6 6L5 3H2M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm7 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+</svg>Add to cart</button>
+             
+            </div>
+            
+            </div>
+         
+          </div>
+        </article>
+        <article class="product-card reveal" data-product="roar" data-tilt>
+          <a class="product-image" href="product.html?id=roar"><img src="assets/bike-pr6-600x392.png" alt="Special Roar Bike CE">
+                    <!-- 🔥 الأيقونات -->
+        <div class="image-icons">
+          <div class="icon" data-label="Add to wishlist"><div class="icon">
+  <svg viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-9-7.5C-1 9 2 3 7 5c2 1 3 3 5 3s3-2 5-3c5-2 8 4 4 8.5C18 16.65 12 21 12 21z"/>
+  </svg>
+</div></div>
+          <div class="icon" data-label="Compare"><svg viewBox="0 0 24 24">
+  <path d="M7 7h10l-3-3m3 3l-3 3M17 17H7l3 3m-3-3l3-3"/>
+</svg></div>
+          <div class="icon" data-label="Quick view"><svg viewBox="0 0 24 24">
+  <path d="M12 5C6 5 2 12 2 12s4 7 10 7 10-7 10-7-4-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+</svg></div>
+        </div>
+          </a>
+          <div class="product-meta">
+            <h4><a href="product.html?id=roar">Special Roar Bike CE</a></h4>
+            <p>Cannondale</p>
+            <div class="price-row"><strong>$675</strong>
+            
+               <div class="product-actions">
+              <button type="button" data-cart="roar"><svg viewBox="0 0 24 24">
+  <path d="M6 6h15l-1.5 9h-13zM6 6L5 3H2M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm7 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+</svg>Add to cart</button>
+              
+            </div>
+            
+            </div>
+         
+          </div>
+        </article>
+        <article class="product-card reveal" data-product="vega" data-tilt>
+          <a class="product-image" href="product.html?id=vega"><img src="assets/bike-pr7-600x392.png" alt="Vega CE Low-Step">
+                    <!-- 🔥 الأيقونات -->
+        <div class="image-icons">
+          <div class="icon" data-label="Add to wishlist"><div class="icon">
+  <svg viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-9-7.5C-1 9 2 3 7 5c2 1 3 3 5 3s3-2 5-3c5-2 8 4 4 8.5C18 16.65 12 21 12 21z"/>
+  </svg>
+</div></div>
+          <div class="icon" data-label="Compare"><svg viewBox="0 0 24 24">
+  <path d="M7 7h10l-3-3m3 3l-3 3M17 17H7l3 3m-3-3l3-3"/>
+</svg></div>
+          <div class="icon" data-label="Quick view"><svg viewBox="0 0 24 24">
+  <path d="M12 5C6 5 2 12 2 12s4 7 10 7 10-7 10-7-4-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+</svg></div>
+        </div>
+          
+          </a>
+          <div class="product-meta">
+            <h4><a href="product.html?id=vega">Vega CE Low-Step</a></h4>
+            <p>Cannondale</p>
+            <div class="price-row"><strong>$805</strong>
+            
+                   <div class="product-actions">
+              <button type="button" data-cart="vega"><svg viewBox="0 0 24 24">
+  <path d="M6 6h15l-1.5 9h-13zM6 6L5 3H2M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm7 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+</svg>Add to cart</button>
+             
+            </div>
+            </div>
+     
+          </div>
+        </article>
+        <article class="product-card reveal" data-product="hybrid" data-tilt>
+          <a class="product-image" href="product.html?id=hybrid"><img src="assets/bike-pr8-600x392.png" alt="Hybrid Electric Bike">
+                    <!-- 🔥 الأيقونات -->
+        <div class="image-icons">
+          <div class="icon" data-label="Add to wishlist"><div class="icon">
+  <svg viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-9-7.5C-1 9 2 3 7 5c2 1 3 3 5 3s3-2 5-3c5-2 8 4 4 8.5C18 16.65 12 21 12 21z"/>
+  </svg>
+</div></div>
+          <div class="icon" data-label="Compare"><svg viewBox="0 0 24 24">
+  <path d="M7 7h10l-3-3m3 3l-3 3M17 17H7l3 3m-3-3l3-3"/>
+</svg></div>
+          <div class="icon" data-label="Quick view"><svg viewBox="0 0 24 24">
+  <path d="M12 5C6 5 2 12 2 12s4 7 10 7 10-7 10-7-4-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+</svg></div>
+        </div>
+          
+          
+          
+          </a>
+          <div class="product-meta">
+            <h4><a href="product.html?id=hybrid">Hybrid Electric Bike</a></h4>
+            <p>Bianchi</p>
+            <div class="price-row"><strong>$999</strong>
+                 <div class="product-actions">
+              <button type="button" data-cart="hybrid"><svg viewBox="0 0 24 24">
+  <path d="M6 6h15l-1.5 9h-13zM6 6L5 3H2M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm7 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+</svg>Add to cart</button>
+            
+            </div>
+            </div>
+       
+          </div>
+        </article>
+      </div>
+    </section>
+
+<section class="packages">
+
+  <a class="package-card" href="#">
+    <img src="assets/package-1.jpg" alt="Electric bicycles">
+
+    <div class="panel">
+      <div class="info">
+        <span>+120 bicycles</span>
+        <strong>Electric bicycles</strong>
+      </div>
+      <div class="card-arrow">›</div>
+    </div>
+  </a>
+
+  <a class="package-card" href="#">
+    <img src="assets/package-2.jpg" alt="Children bicycles">
+
+    <div class="panel">
+      <div class="info">
+        <span>+120 bicycles</span>
+        <strong>Children bicycles</strong>
+      </div>
+      <div class="card-arrow">›</div>
+    </div>
+  </a>
+
+</section>
+<section class="testimonials" id="blog">
+  <div class="testimonial-copy">
+
+    <h3>What say <span>Pro People</span></h3>
+
+    <div class="testimonial-slider">
+
+      <article class="testimonial active">
+        <div class="user">
+          <img src="assets/t4.jpg" alt="Sarah Lisgun">
+          <div class="info">
+            <h4>Sarah Lisgun</h4>
+            <span>Bike Rider</span>
+          </div>
+        </div>
+
+        <p>
+          A bicycle, also called a pedal cycle, bike or cycle, is a human-powered
+          or motor-powered assisted, pedal-driven, single-track vehicle...
+        </p>
+      </article>
+
+      <article class="testimonial">
+        <div class="user">
+          <img src="assets/t6.jpg" alt="Antonio Benz">
+          <div class="info">
+            <h4>Antonio Benz</h4>
+            <span>Bike designer</span>
+          </div>
+        </div>
+
+        <p>
+          Every detail matters: balance, wheel quality, comfortable seat position,
+          and the feeling that the ride responds instantly.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="slider-controls">
+      <button data-prev>&larr;</button>
+      <button data-next>&rarr;</button>
+    </div>
+
+  </div>
+
+  <div class="testimonial-bike">
+    <img src="assets/special-offer.png" alt="Special bike">
+  </div>
+</section>
+
+    <section class="special-offer" id="colors">
+      <div class="special-bg">MEET OUR SPECIAL BIKES</div>
+      <div class="reveal">
+        <h3>Get your own <span>Special Bike</span></h3>
+        <p>Subscribe to our newsletter to get new Bike Offers</p>
+        <form class="subscribe" data-subscribe>
+          <input type="email" placeholder="Enter your email ..." aria-label="Email address" required>
+          <button type="submit"> <span>✉ </span>Join Now</button>
+        </form>
+      </div>
+    </section>
+  </main>
+    <div class="contact-strip reveal">
+      <div><span>📧Pre-sale Questions</span><strong>help@xtrabicycle.com</strong></div>
+      <div><span>📞Call Us</span><strong>+1 800 2345 6789</strong></div>
+      <div><span>📍Our Location</span><strong>#2354, Beverly Hills, LA</strong></div>
+    </div>
+  <footer class="footer" id="contact">
+   
+    <div class="footer-grid">
+     <div class="footer-office">
+  <h5>Office</h5>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-location-dot"></i></span>
+    <p>121 King Street, NewYork</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-phone"></i></span>
+    <p>+1 (800) 333 44 55</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-envelope"></i></span>
+    <p>xtrabike@gmail.com</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-briefcase"></i></span>
+    <p>+1 (800) 333 99 88</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fab fa-x-twitter"></i></span>
+    <p>@xtra_bikeshop</p>
+  </div>
+</div>
+      <div>
+        <h5>News</h5>
+        <a class="news-item" href="post3.html">
+          <img src="assets/post1-1-150x150.jpg" alt="">How to Safely Commute to Work by Bicycle</a>
+          <a class="news-item" href="post2.html">
+            <img src="assets/post2-1-150x150.jpg" alt="">Top 10 Reasons to Start Cycling Today</a>
+          </div>
+      <div><h5>Shortcuts</h5><div class="footer-links"><a href="#home">Home</a><a href="#">Maps</a><a href="#">City Store</a><a href="#">Careers</a><a href="#">News</a><a href="#">Employees</a><a href="#">Clients</a><a href="#">Teams</a><a href="#">Consultation</a><a href="#">Benefits</a><a href="#">Privacy</a><a href="#">Support</a></div></div>
+      <div><h5>Working Hours</h5><p>Our support available to help you 24 hours a day, seven days a week.</p><p>Monday to Friday <b>8AM - 4PM</b></p><p>Saturday <b>8AM - 1PM</b></p><p>Sunday <b>Closed</b></p></div>
+    </div>
+    <div class="footer-bottom"><span>Copyright &copy; 2026 Xtra Theme. All Rights Reserved.</span><img src="assets/payment.png" alt="Payment methods"></div>
+  </footer>
+
+  <a class="chat-bubble" href="#contact" aria-label="Chat">&#9679;</a>
+  <div class="toast" data-toast-box>Product has been added to your cart.</div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Post - XTRA Bike Shop</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- 🔥 Font Awesome (مرة واحدة فقط) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- 🔥 Remix Icons (مرة واحدة فقط) -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+<!-- 🔥 Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- 🔥 CSS -->
+<link rel="stylesheet" href="styles.css">
+ <link rel="icon" href="assets/icone.jpg">
+
+</head>
+  <div class="floating-actions">
+
+  <!-- زر الإيميل (ثابت) -->
+  <a href="mailto:xtrabike@gmail.com" class="float-btn mail-btn">
+    <svg viewBox="0 0 24 24">
+      <path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </a>
+
+  <!-- زر الرجوع للأعلى -->
+  <button class="float-btn back-top" id="backTop">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 18V6" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M6 12l6-6 6 6" stroke="currentColor" stroke-width="2" fill="none"/>
+    </svg>
+  </button>
+
+</div>
+
+
+  <body>
+  <div class="top-offer">
+    <strong>envato</strong><span>market</span>
+    <p>Limited time offer, Buy XTRA WordPress theme only <b>$29</b></p>
+    <a href="https://themeforest.net/checkout/114363848/create_account?clickid=y4uV0U10VxycWNiywYRpJ0YsUkuysmW24WyWWA0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=1287861&mp_value1=&utm_campaign=af_impact_radius_1287861&utm_medium=affiliate&utm_source=impact_radius">Download XTRA Theme</a>
+  </div>
+<!-- NAVBAR (زي ما هو عندك) -->
+<header class="site-header" id="post" data-header>
+
+  <a class="brand" href="index.html" aria-label="Bike Shop home">
+    <img src="assets/bike-logo.png" alt="Bike Shop">
+  </a>
+
+  <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="main-nav" data-nav>
+    <a href="index.html">Home</a>
+
+    <div class="nav-item has-dropdown">
+      <a class="about-trigger" href="about.html">
+        About <span class="nav-arrow"></span>
+      </a>
+
+      <div  class="nav-dropdown">
+        <a href="about.html">Submenu 1</a>
+        <a class="nested-trigger" href="services.html">
+          Dropdown menu <span></span>
+        </a>
+        <a href="about.html#story">Submenu 2</a>
+
+        <div class="nav-submenu">
+          <a href="services.html">Submenu 1</a>
+          <a href="faq.html">Submenu 2</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="shop.html">Shop</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- 🔥 ACTIONS -->
+  <div class="header-actions">
+
+    <!-- زر -->
+    <a class="help-pill" href="contact.html">
+      <i class="fas fa-bicycle"></i>
+      Help & Service
+    </a>
+
+    <!-- wishlist -->
+    <a class="round-action" href="wishlist.html" aria-label="Wishlist">
+      <i class="far fa-heart"></i>
+      <span class="count">43</span>
+    </a>
+
+    <!-- cart -->
+    <a class="round-action" href="cart.html" aria-label="Cart">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="count">1</span>
+    </a>
+
+  </div>
+
+</header>
+<aside class="side-tools">
+
+  <a href="#home" data-label="Purchase Theme">
+    <i class="fa-solid fa-bolt"></i>
+  </a>
+
+  <a href="https://xtratheme.com/docs" data-label="Documentation">
+    <i class="fa-regular fa-copy"></i>
+  </a>
+
+  <a href="https://www.youtube.com/channel/UCrS1L4oeTRfU1hvIo1gJGjg/videos" data-label="Video Tutorials">
+    <i class="fa-regular fa-circle-play"></i>
+  </a>
+
+  <a href="https://codevz.ticksy.com/" data-label="Support center">
+    <i class="fa-regular fa-comment"></i>
+  </a>
+
+  <a href="https://xtratheme.com/showcase" data-label="showcase">
+    <i class="fa-regular fa-heart"></i>
+  </a>
+
+  <a href="cart.html" data-label="Enable Section Export">
+    <i class="fa-solid fa-download"></i>
+  </a>
+
+</aside>
+
+<!-- 🔥 BREADCRUMB -->
+<section class="inner-hero">
+
+  <div class="post-crumb-wrap">
+
+    <!-- HOME -->
+    <a href="index.html" class="post-crumb-home">
+      <i class="ri-home-5-line"></i>
+    </a>
+
+    <!-- BIKE -->
+    <i class="ri-bike-line post-crumb-bike"></i>
+
+    <!-- BLOG -->
+    <a href="blog.html" class="post-crumb-link">
+      Blog
+    </a>
+
+    <!-- BIKE -->
+    <i class="ri-bike-line post-crumb-bike"></i>
+
+    <!-- CURRENT POST -->
+      <a href="post.html" class="post-crumb-link">
+      Uncategorized
+    </a>
+
+
+  </div>
+
+</section>
+
+<!-- 🔥 MAIN -->
+<main class="post-layout">
+
+
+ 
+  <!-- LEFT -->
+  <div class="post-main">
+<div class="post-main-inner"> 
+    <h1 id="post-title">5 Local Cycling Trails You Shouldn’t Miss</h1>
+
+<div class="post-meta">
+  <span><i class="fa-regular fa-clock"></i> 10 June 2024</span>
+  <span><i class="fa-regular fa-eye"></i> 1,234 views</span>
+</div>
+
+    <img src="assets/white-bicycle-with-black-details.jpg" id="post-image" class="post-main-image">
+
+    <div class="post-content">
+
+  <p>
+    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt.
+  </p>
+
+  <!-- 🔥 Quote box -->
+  <div class="post-quote">
+    Pellentesque in ipsum id orci porta dapibus. 
+    Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt.
+  </div>
+
+  <p>
+   In the beautiful surroundings of Upcote Farm in Cheltenham, 2000 Trees festival is a gem of a find if you’ve been lucky enough…I found this festival in 2008 when ‘Reuben’ were due to headline, but even though they disbanded a few weeks prior to the festival, us fans still decided to turn up, and boy am I glad I did… Being a small sized 5000 capacity festival, but not enough to have <span class="highlight">20 minute waits</span> at the bars and toilets. The balance between atmosphere and accessibility is second to none. The food stalls are all hand picked, the same with the local ciders/ales and beers, the organisers have really nailed it on the head, you can tell they themselves are, as well as bringing in some big names, it really does cater for every type music fan.
+  </p>
+
+  <!-- 🔥 Split layout -->
+
+
+<div class="split-box">
+    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+  </div>
+
+  <p>
+    Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et,
+    porttitor at sem. Donec rutrum congue leo eget malesuada.
+
+    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada.
+    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut libero malesuada feugiat.
+    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+  </p>
+
+
+</div>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<div class="post-top-meta">
+
+  <!-- AUTHOR -->
+  <div class="meta-item">
+    <div class="meta-icon author">
+      <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="meta-text">Elmntr</div>
+  </div>
+
+  <!-- DATE -->
+  <div class="meta-item">
+    <div class="meta-icon date">
+      <i class="fa-regular fa-clock"></i>
+    </div>
+    <div class="meta-text">10 June 2024</div>
+  </div>
+
+  <!-- CATEGORY -->
+  <div class="meta-item">
+    <div class="meta-icon category">
+      <i class="fa-solid fa-folder"></i>
+    </div>
+    <div class="meta-text">Uncategorized</div>
+  </div>
+
+  <!-- TAGS -->
+  <div class="meta-item">
+    <div class="meta-icon tag-icon">
+      <i class="fa-solid fa-tag"></i>
+    </div>
+    <div class="meta-text">article</div>
+  </div>
+
+  <div class="meta-item">
+    <!-- <div class="meta-icon tag-icon">
+      <i class="fa-solid fa-tag"></i>
+    </div> -->
+    <div class="meta-text">learn</div>
+  </div>
+
+  <div class="meta-item">
+    <!-- <div class="meta-icon tag-icon">
+      <i class="fa-solid fa-tag"></i>
+    </div> -->
+    <div class="meta-text">tutorial</div>
+  </div>
+
+  <div class="meta-item">
+    <!-- <div class="meta-icon tag-icon">
+      <i class="fa-solid fa-tag"></i>
+    </div> -->
+    <div class="meta-text">wordpress</div>
+  </div>
+
+</div>
+
+<div class="share-box">
+
+  <div class="share-title">Share it</div>
+
+  <div class="share-icons">
+
+    <a href="#" class="share-btn facebook" data-title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="#" class="share-btn twitter" data-title="X">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+
+    <a href="#" class="share-btn pinterest" data-title="Pinterest">
+      <i class="fab fa-pinterest-p"></i>
+    </a>
+
+    <a href="#" class="share-btn whatsapp" data-title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="#" class="share-btn mail" data-title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="post-navigation">
+
+  <!-- LEFT -->
+  <a href="#" class="post-nav-box nav-left hidden-nav">
+    
+    <div class="nav-circle">
+      <i class="fa-solid fa-chevron-left"></i>
+    </div>
+
+    <div class="nav-info">
+      <span>Previous</span>
+      <h4>No previous post</h4>
+    </div>
+
+  </a>
+
+  <!-- CENTER -->
+<a href="blog.html" class="nav-middle">
+
+  <span class="nav-middle-text">Return to blog</span>
+
+  <div class="grid-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</a>
+  <!-- RIGHT -->
+  <a href="post1.html" class="post-nav-box nav-right">
+
+    <div class="nav-info">
+      <span>Next</span>
+      <h4>Electric Bikes Explained: Are They Worth It?</h4>
+    </div>
+
+    <div class="nav-circle">
+      <i class="fa-solid fa-chevron-right"></i>
+    </div>
+
+  </a>
+
+</div>
+   
+
+
+  <!-- 🔥 RELATED POSTS -->
+<div class="rp-section">
+
+  <div class="rp-title">
+    <h3>Related Posts</h3>
+  </div>
+
+  <div class="rp-card">
+<a href="post1.html" class="rp-link-box">
+    <div class="rp-image-wrap">
+      <img src="assets/close-up-minimal-bicycle-outdoor.jpg" alt="">
+
+      <div class="rp-overlay"></div>
+
+      <div class="rp-icon">
+        <i class="ri-links-line"></i>
+      </div>
+    </div>
+</a>
+    <h4>Electric Bikes Explained: Are They Worth It?</h4>
+<div class="rp-meta">
+
+  <span class="rp-icon-meta">
+    <i class="fa-solid fa-folder"></i>
+  </span>
+
+  <span class="rp-link">Tutorial</span>
+  <span class="rp-link">Updates</span>
+
+</div>
+  </div>
+
+</div>
+
+
+
+
+
+  <!-- 🔥 COMMENTS -->
+<div class="comments-section">
+
+  <div class="section-titlecom">
+    <h3><i class="fa-solid fa-comments"></i> 3 Comments</h3>
+  </div>
+
+  <div class="comment">
+
+    <img src="assets/per7.png" class="comment-avatar">
+
+    <div class="comment-body">
+      <div class="comment-top">
+        <h4>Nada <span> Says</span>:</h4>
+        <span>June 1, 2024 at 7:50 am</span>
+      </div>
+
+      <p>
+I would love a theme for businesses that make things by hand. I make wired jewelry with gemstones and also knit. No one really has that and there are tons of us out there who are forced to go to codevz because there are no suitable themes. Also, Themeforest does not have many themes at all geared for handmade wire/fiber artists.      </p>
+
+      <a href="#">Reply</a>
+    </div>
+
+  </div>
+
+      <div class="comment alt">
+
+    <img src="assets/per6.png" class="comment-avatar">
+
+    <div class="comment-body">
+      <div class="comment-top">
+        <h4> David <span> Says</span>:</h4>
+        <span>June 1, 2024 at 7:59 am</span>
+      </div>
+
+      <p>
+Best support ever. Quick response and always a solution to my problem or an answer to my specific needs and wishes! And apart from that, a wonderful theme with lots of options and possibilities.</p>
+      <a href="#">Reply</a>
+    </div>
+
+  </div>
+    <div class="comment">
+
+    <img src="assets/per4.png" class="comment-avatar">
+
+    <div class="comment-body">
+      <div class="comment-top">
+        <h4>Nicolas   <span> Says</span>:</h4>
+        <span>June 1, 2024 at 8:00 am
+</span>
+      </div>
+
+      <p>
+Professional company company publishing and continually updating an extremely useful theme. I have purchased this theme for at least 10 of my clients, and it is easy to make each site look completely different. The one time I ran into a problem, the support team was there for me with specific instructions for solving the problem.</p>
+      <a href="#">Reply</a>
+    </div>
+
+  </div>
+
+
+<div class="comment-form">
+
+  <div class="form-header">
+    <h3>Leave a Reply</h3>
+    <span id="cancel-reply" class="cancel-reply">Cancel reply</span>
+  </div>
+
+  <p class="form-note">
+    Your email address will not be published. Required fields are marked *
+  </p>
+
+  <!-- COMMENT -->
+  <div class="form-group">
+    <label>Comment *</label>
+    <textarea></textarea>
+  </div>
+
+  <!-- ROW -->
+  <div class="form-roww">
+
+    <div class="form-group">
+      <label>Name *</label>
+      <input type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label>Email *</label>
+      <input type="email"  required>
+    </div>
+
+    <div class="form-group">
+      <label>5 + 7 = ?</label>
+      <input type="text" id="captcha" required>
+    </div>
+
+  </div>
+
+<!-- checkbox -->
+  <div class="save-info">
+    <input type="checkbox" id="save">
+    <label for="save">
+      Save my name, email, and website in this browser for the next time I comment.
+    </label>
+  </div>
+
+  <button class="submit-btn">Post Comment</button>
+
+</div>
+
+</div>
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="post-sidebar">
+
+ <div class="side-card search-card">
+  <h3>Search in Blog</h3>
+
+  <div class="body">
+    <form class="blog-search">
+
+      <input class="blog-input" placeholder="Search ..." />
+
+      <button class="blog-btn">
+        Search
+      </button>
+
+    </form>
+  </div>
+</div>
+
+    <!-- TAGS -->
+  <div class="side-card">
+    <h3>Tags Cloud</h3>
+    <div class="body tag-cloud">
+      <span>article</span><span>computer</span><span>developer</span>
+      <span>famous</span><span>interview</span><span>it</span>
+      <span>learn</span><span>money</span><span>photography</span>
+      <span>post</span><span>seo</span><span>technology</span>
+      <span>tutorial</span><span>website</span>
+    </div>
+  </div>
+
+  <div class="side-card">
+    <h3>Ads</h3>
+    <div class="body">
+      <div class="ad-box">Advertisement !</div>
+    </div>
+  </div>
+
+  </aside>
+
+</main>
+
+
+
+
+   <div class="contact-strip reveal">
+      <div><span>📧Pre-sale Questions</span><strong>help@xtrabicycle.com</strong></div>
+      <div><span>📞Call Us</span><strong>+1 800 2345 6789</strong></div>
+      <div><span>📍Our Location</span><strong>#2354, Beverly Hills, LA</strong></div>
+    </div>
+<!-- FOOTER -->
+  <footer class="footer" id="contact">
+   
+    <div class="footer-grid">
+     <div class="footer-office">
+  <h5>Office</h5>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-location-dot"></i></span>
+    <p>121 King Street, NewYork</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-phone"></i></span>
+    <p>+1 (800) 333 44 55</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-envelope"></i></span>
+    <p>xtrabike@gmail.com</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-briefcase"></i></span>
+    <p>+1 (800) 333 99 88</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fab fa-x-twitter"></i></span>
+    <p>@xtra_bikeshop</p>
+  </div>
+</div>
+  <div>
+        <h5>News</h5>
+        <a class="news-item" href="post3.html">
+          <img src="assets/post1-1-150x150.jpg" alt="">How to Safely Commute to Work by Bicycle</a>
+          <a class="news-item" href="post2.html">
+            <img src="assets/post2-1-150x150.jpg" alt="">Top 10 Reasons to Start Cycling Today</a>
+          </div>      <div><h5>Shortcuts</h5><div class="footer-links"><a href="#home">Home</a><a href="#">Maps</a><a href="#">City Store</a><a href="#">Careers</a><a href="#">News</a><a href="#">Employees</a><a href="#">Clients</a><a href="#">Teams</a><a href="#">Consultation</a><a href="#">Benefits</a><a href="#">Privacy</a><a href="#">Support</a></div></div>
+      <div><h5>Working Hours</h5><p>Our support available to help you 24 hours a day, seven days a week.</p><p>Monday to Friday <b>8AM - 4PM</b></p><p>Saturday <b>8AM - 1PM</b></p><p>Sunday <b>Closed</b></p></div>
+    </div>
+    <div class="footer-bottom"><span>Copyright &copy; 2026 Xtra Theme. All Rights Reserved.</span><img src="assets/payment.png" alt="Payment methods"></div>
+  </footer>
+
+<script src="script.js"></script>
+<script>
+const url = encodeURIComponent(window.location.href);
+const title = encodeURIComponent(document.title);
+
+document.querySelector('.facebook').href =
+  `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+
+document.querySelector('.twitter').href =
+  `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+
+document.querySelector('.pinterest').href =
+  `https://pinterest.com/pin/create/button/?url=${url}&description=${title}`;
+
+document.querySelector('.whatsapp').href =
+  `https://api.whatsapp.com/send?text=${title} ${url}`;
+
+document.querySelector('.mail').href =
+  `mailto:?subject=${title}&body=${url}`;
+</script>
+
+</body>
+</html>

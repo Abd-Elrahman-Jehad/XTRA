@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog - XTRA Bike Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+   <link rel="icon" href="assets/icone.jpg">
+  </head>
+  <div class="floating-actions">
+
+  <!-- زر الإيميل (ثابت) -->
+  <a href="mailto:xtrabike@gmail.com" class="float-btn mail-btn">
+    <svg viewBox="0 0 24 24">
+      <path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </a>
+
+  <!-- زر الرجوع للأعلى -->
+  <button class="float-btn back-top" id="backTop">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 18V6" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M6 12l6-6 6 6" stroke="currentColor" stroke-width="2" fill="none"/>
+    </svg>
+  </button>
+
+</div>
+  <body>
+      <div class="top-offer">
+    <strong>envato</strong><span>market</span>
+    <p>Limited time offer, Buy XTRA WordPress theme only <b>$29</b></p>
+    <a href="https://themeforest.net/checkout/114363848/create_account?clickid=y4uV0U10VxycWNiywYRpJ0YsUkuysmW24WyWWA0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=1287861&mp_value1=&utm_campaign=af_impact_radius_1287861&utm_medium=affiliate&utm_source=impact_radius">Download XTRA Theme</a>
+  </div>
+
+<header class="site-header" id="blog" data-header>
+
+  <a class="brand" href="index.html" aria-label="Bike Shop home">
+    <img src="assets/bike-logo.png" alt="Bike Shop">
+  </a>
+
+  <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="main-nav" data-nav>
+    <a href="index.html">Home</a>
+
+    <div class="nav-item has-dropdown">
+      <a class="about-trigger" href="about.html">
+        About <span class="nav-arrow"></span>
+      </a>
+
+      <div class="nav-dropdown">
+        <a href="about.html">Submenu 1</a>
+        <a class="nested-trigger" href="services.html">
+          Dropdown menu <span></span>
+        </a>
+        <a href="about.html#story">Submenu 2</a>
+
+        <div class="nav-submenu">
+          <a href="services.html">Submenu 1</a>
+          <a href="faq.html">Submenu 2</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="shop.html">Shop</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- 🔥 ACTIONS -->
+  <div class="header-actions">
+
+    <!-- زر -->
+    <a class="help-pill" href="contact.html">
+      <i class="fas fa-bicycle"></i>
+      Help & Service
+    </a>
+
+    <!-- wishlist -->
+    <a class="round-action" href="wishlist.html" aria-label="Wishlist">
+      <i class="far fa-heart"></i>
+<span class="count" data-wishlist-count>0</span>
+    </a>
+
+    <!-- cart -->
+    <a class="round-action" href="cart.html" aria-label="Cart">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="count">1</span>
+    </a>
+
+  </div>
+
+</header>
+
+<aside class="side-tools">
+
+  <a href="#home" data-label="Purchase Theme">
+    <i class="fa-solid fa-bolt"></i>
+  </a>
+
+  <a href="https://xtratheme.com/docs" data-label="Documentation">
+    <i class="fa-regular fa-copy"></i>
+  </a>
+
+  <a href="https://www.youtube.com/channel/UCrS1L4oeTRfU1hvIo1gJGjg/videos" data-label="Video Tutorials">
+    <i class="fa-regular fa-circle-play"></i>
+  </a>
+
+  <a href="https://codevz.ticksy.com/" data-label="Support center">
+    <i class="fa-regular fa-comment"></i>
+  </a>
+
+  <a href="https://xtratheme.com/showcase" data-label="showcase">
+    <i class="fa-regular fa-heart"></i>
+  </a>
+
+  <a href="cart.html" data-label="Enable Section Export">
+    <i class="fa-solid fa-download"></i>
+  </a>
+
+</aside>
+<div class="blog-crumb-wrap">
+
+  <a href="index.html" class="blog-crumb-home">
+    <i class="ri-home-5-line"></i>
+  </a>
+
+  <i class="ri-bike-line blog-crumb-bike"></i>
+
+  <span>Blog</span>
+
+</div>
+<main class="blog-layout">
+  <!-- 🔥 BLOG BREADCRUMB -->
+
+
+  <!-- 🔥 LEFT -->
+  <section class="post-list">
+
+
+
+   <!-- POST -->
+<!-- POST 1 -->
+<article class="post-card" data-page="1">
+<a href="post.html" class="rp-link-box">
+  <div class="post-image-wrap">
+    <div class="post-image">
+      <img src="assets/white-bicycle-with-black-details.jpg" alt="Cycling Trails" />
+
+      <div class="post-icon">
+        <i class="ri-links-line"></i>
+      </div>
+    </div>
+  </div>
+</a>
+  <div class="post-content">
+    <h2>5 Local Cycling Trails You Shouldn’t Miss</h2>
+
+    <div class="meta">
+      <img src="assets/per1.png" alt="Author">
+      <div>
+        <span>Uncategorized</span>
+        <small>10 June 2024</small>
+      </div>
+    </div>
+
+    <p>
+      Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+      Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta ...
+    </p>
+
+    <a class="read-more" href="post.html">
+      <span>›</span> Read More
+    </a>
+  </div>
+
+</article>
+
+
+<!-- POST 2 -->
+<article class="post-card" data-page="1">
+<a href="post1.html" class="rp-link-box">
+  <div class="post-image-wrap">
+    <div class="post-image">
+      <img src="assets/close-up-minimal-bicycle-outdoor.jpg" alt="Electric Bike" />
+
+      <div class="post-icon">
+        <i class="ri-links-line"></i>
+      </div>
+    </div>
+  </div>
+</a>
+  <div class="post-content">
+    <h2>Electric Bikes Explained: Are They Worth It?</h2>
+
+    <div class="meta">
+      <img src="assets/per2.png" alt="Author">
+      <div>
+        <span>News</span>
+        <small>10 June 2024</small>
+      </div>
+    </div>
+
+    <p>
+      Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+      Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta ...
+    </p>
+
+    <a class="read-more" href="post1.html">
+      <span>›</span> Read More
+    </a>
+  </div>
+
+</article>
+
+
+<!-- POST 3 -->
+<article class="post-card" data-page="2">
+<a href="post3.html" class="rp-link-box">
+  <div class="post-image-wrap">
+    <div class="post-image">
+      <img src="assets/post1-1.jpg" alt="Commute Bike" />
+
+      <div class="post-icon">
+        <i class="ri-links-line"></i>
+      </div>
+    </div>
+  </div>
+</a>
+  <div class="post-content">
+    <h2>How to Safely Commute to Work by Bicycle</h2>
+
+    <div class="meta">
+      <img src="assets/per3.png" alt="Author">
+      <div>
+        <span>Interview</span>
+        <small>10 June 2024</small>
+      </div>
+    </div>
+
+    <p>
+      Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+      Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta ...
+    </p>
+
+    <a class="read-more" href="post3.html">
+      <span>›</span> Read More
+    </a>
+  </div>
+
+</article>
+
+
+<!-- POST 4 -->
+<article class="post-card" data-page="2">
+<a href="post4.html" class="rp-link-box">
+  <div class="post-image-wrap">
+    <div class="post-image">
+      <img src="assets/honbike-IdYBkGBBVzg-unsplash.jpg" alt="Start Cycling" />
+
+      <div class="post-icon">
+        <i class="ri-links-line"></i>
+      </div>
+    </div>
+  </div>
+</a>
+  <div class="post-content">
+    <h2>How to Choose the Perfect Bike for Your Lifestyle</h2>
+
+    <div class="meta">
+      <img src="assets/per4.png" alt="Author">
+      <div>
+        <span>News</span>
+        <small>9 June 2024</small>
+      </div>
+    </div>
+
+    <p>
+      Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+      Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta ...
+    </p>
+
+    <a class="read-more" href="post4.html">
+      <span>›</span> Read More
+    </a>
+  </div>
+
+</article>
+
+<!-- POST -->
+<article class="post-card"data-page="1">
+<a href="post2.html" class="rp-link-box">
+  <div class="post-image-wrap">
+    <div class="post-image">
+      <img src="assets/post2-1.jpg" alt="Bike lifestyle" />
+
+      <div class="post-icon">
+        <i class="ri-links-line"></i>
+      </div>
+    </div>
+  </div>
+</a>
+  <div class="post-content">
+    <h2>Top 10 Reasons to Start Cycling Today</h2>
+
+    <div class="meta">
+      <img src="assets/per5.png" alt="Author">
+      <div>
+        <span>Tutorial</span>
+        <small>9 June 2024</small>
+      </div>
+    </div>
+
+    <p>
+      Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+      Donec sollicitudin molestie malesuada.
+    </p>
+
+    <a class="read-more" href="post2.html">
+      <span>›</span> Read More
+    </a>
+  </div>
+
+</article>
+
+    <!-- PAGINATION -->
+<nav class="pagination">
+
+  <a href="#" class="pagi-arrow" id="pageArrow">
+    <i class="ri-arrow-right-s-line"></i>
+  </a>
+
+  <a href="#" class="pagi-btn active" data-page="1">1</a>
+  <a href="#" class="pagi-btn" data-page="2">2</a>
+
+</nav>
+
+  </section>
+
+  <!-- 🔥 RIGHT -->
+  <aside class="blog-sidebar">
+
+  <!-- 🔥 SEARCH (مميز) -->
+<div class="side-card search-card">
+  <h3>Search in Blog</h3>
+
+  <div class="body">
+    <form class="blog-search">
+
+      <input class="blog-input" placeholder="Search ..." />
+
+      <button class="blog-btn">
+        Search
+      </button>
+
+    </form>
+  </div>
+</div>
+
+  <!-- TAGS -->
+  <div class="side-card">
+    <h3>Tags Cloud</h3>
+    <div class="body tag-cloud">
+      <span>article</span><span>computer</span><span>developer</span>
+      <span>famous</span><span>interview</span><span>it</span>
+      <span>learn</span><span>money</span><span>photography</span>
+      <span>post</span><span>seo</span><span>technology</span>
+      <span>tutorial</span><span>website</span>
+    </div>
+  </div>
+
+  <!-- ADS -->
+  <div class="side-card">
+    <h3>Ads</h3>
+    <div class="body">
+      <div class="ad-box">Advertisement !</div>
+    </div>
+  </div>
+
+</aside>
+</main>
+    <a class="chat-bubble" href="contact.html">&#9679;</a
+    ><a class="back-top" href="#">&#8963;</a>
+    <div class="toast" data-toast-box></div>
+
+
+
+        <div class="contact-strip reveal">
+      <div><span>📧Pre-sale Questions</span><strong>help@xtrabicycle.com</strong></div>
+      <div><span>📞Call Us</span><strong>+1 800 2345 6789</strong></div>
+      <div><span>📍Our Location</span><strong>#2354, Beverly Hills, LA</strong></div>
+    </div>
+  <footer class="footer" id="contact">
+   
+    <div class="footer-grid">
+     <div class="footer-office">
+  <h5>Office</h5>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-location-dot"></i></span>
+    <p>121 King Street, NewYork</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-phone"></i></span>
+    <p>+1 (800) 333 44 55</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-envelope"></i></span>
+    <p>xtrabike@gmail.com</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fas fa-briefcase"></i></span>
+    <p>+1 (800) 333 99 88</p>
+  </div>
+
+  <div class="office-item">
+    <span class="icon"><i class="fab fa-x-twitter"></i></span>
+    <p>@xtra_bikeshop</p>
+  </div>
+</div>
+  <div>
+        <h5>News</h5>
+        <a class="news-item" href="post3.html">
+          <img src="assets/post1-1-150x150.jpg" alt="">How to Safely Commute to Work by Bicycle</a>
+          <a class="news-item" href="post2.html">
+            <img src="assets/post2-1-150x150.jpg" alt="">Top 10 Reasons to Start Cycling Today</a>
+          </div>      <div><h5>Shortcuts</h5><div class="footer-links"><a href="#home">Home</a><a href="#">Maps</a><a href="#">City Store</a><a href="#">Careers</a><a href="#">News</a><a href="#">Employees</a><a href="#">Clients</a><a href="#">Teams</a><a href="#">Consultation</a><a href="#">Benefits</a><a href="#">Privacy</a><a href="#">Support</a></div></div>
+      <div><h5>Working Hours</h5><p>Our support available to help you 24 hours a day, seven days a week.</p><p>Monday to Friday <b>8AM - 4PM</b></p><p>Saturday <b>8AM - 1PM</b></p><p>Sunday <b>Closed</b></p></div>
+    </div>
+    <div class="footer-bottom"><span>Copyright &copy; 2026 Xtra Theme. All Rights Reserved.</span><img src="assets/payment.png" alt="Payment methods"></div>
+  </footer>
+    <script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const buttons = document.querySelectorAll(".pagi-btn");
+  const posts = document.querySelectorAll(".post-card");
+  const arrow = document.getElementById("pageArrow");
+
+  let currentPage = 1;
+
+  function showPage(page) {
+    currentPage = parseInt(page);
+
+    // 🔥 إزالة active
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    // 🔥 إضافة active للزر الصحيح
+    const activeBtn = document.querySelector(`.pagi-btn[data-page="${page}"]`);
+    if (activeBtn) activeBtn.classList.add("active");
+
+    // 🔥 إظهار البوستات حسب الصفحة
+    posts.forEach(post => {
+      if (post.getAttribute("data-page") == page) {
+        post.style.display = "grid";
+      } else {
+        post.style.display = "none";
+      }
+    });
+
+    // 🔥 تغيير اتجاه السهم
+    if (currentPage === 1) {
+      arrow.innerHTML = '<i class="ri-arrow-right-s-line"></i>';
+    } else {
+      arrow.innerHTML = '<i class="ri-arrow-left-s-line"></i>';
+    }
+  }
+
+  // 🔥 الضغط على الأرقام
+  buttons.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const page = this.getAttribute("data-page");
+      showPage(page);
+    });
+  });
+
+  // 🔥 الضغط على السهم
+  arrow.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (currentPage === 1) {
+      showPage(2);
+    } else {
+      showPage(1);
+    }
+  });
+
+  // 🔥 أول تحميل
+  showPage(1);
+
+});
+</script>
+
+  </body>
+</html>
