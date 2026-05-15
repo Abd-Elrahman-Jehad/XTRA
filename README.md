@@ -2,7 +2,8 @@
 ## FUTURISTIC PREMIUM BICYCLE EXPERIENCE
 
 <p align="center">
-<img src="https://abd-elrahman-jehad.github.io/XTRA/assets/hero-screenshot.png" width="80%" />
+  <img width="1919" height="924" alt="Screenshot 2026-05-15 210421" src="https://github.com/user-attachments/assets/df49e238-0dd1-4599-83a6-aa5fe144944f"width="80%" />
+
 <br>
 Luxury • Cinematic • Futuristic • Interactive
 </p>
@@ -59,7 +60,7 @@ Every section feels alive, cinematic, and modern.
 - Premium dark atmosphere
 
 <p align="center">
-<img src="https://abd-elrahman-jehad.github.io/XTRA/assets/loading-screenshot.png" width="60%" />
+  <img alt="Screenshot 2026-05-15 210444" src="https://github.com/user-attachments/assets/74fc7017-e217-4d17-bd90-8ce3436620d2"   width="60%"/>
 </p>
 
 ---
@@ -111,7 +112,8 @@ Optimized for:
 - **📞 Contact:** Elegant responsive contact section  
 
 <p align="center">
-<img src="https://abd-elrahman-jehad.github.io/XTRA/assets/products-screenshot.png" width="70%" />
+  <img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/46880a70-2c0f-4ae0-b753-414518a009c8"width="70%/>
+
 </p>
 
 ---
