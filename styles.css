@@ -21620,3 +21620,15 @@ body.loading{
     opacity:0 !important;
   }
 }
+@media screen and (max-width: 575px){
+
+  .testimonial-bike{
+    right: -80px !important;
+  }
+
+}
+@media screen and (max-width: 991px) {
+  .testimonial-bike {
+    right: -80px !important;  
+  }
+}
